@@ -1,0 +1,366 @@
+// main: ../style.sass
+
+.navbar__logo_svg
+  width: 85%
+  margin: 20px auto
+  display: block
+.fix-box
+  width: 12%
+  position: fixed
+  background-color: #13293d
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  padding: 0px
+  z-index: 1
+  height: 100vh
+  &__header
+    &_buy-btn
+      display: none
+    &_hamburg-btn
+      display: none
+  &__contact
+    background: #fbfbfb
+    padding: 20px 10px
+
+  &__main
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__nav
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    height: 100%
+
+.nav
+  &__wrap
+  &__menu
+    width: 80%
+    & li
+      text-transform: initial
+      padding: 20px 0
+      position: relative
+    &_item
+      font-size: 24px
+      font-weight: bold
+      color: #fff
+      &:hover
+        color: #1599FC
+      &:hover::after
+        content: '›'
+        display: inline-block
+        margin-left: 15px
+        font-size: 37px
+        line-height: 0.5
+
+.main-menu
+  &__sub
+    position: absolute
+    background: #fff
+    padding: 18px 24px
+    left: 110%
+    border-radius: 5px
+    top: 0px
+    width: 400px
+    opacity: 0
+    transition: .4s
+    z-index: -1
+    display: none
+    &-active
+      opacity: 1 !important
+      transition: .4s
+      display: block
+    & li
+      padding: 15px 0
+    &_item
+      color: #13293D
+      font-size: 20px
+      display: flex
+      align-items: center
+      &:hover
+        color: #1599FC
+      &:hover::before
+        height: 15px
+        width: 15px
+        content: ''
+        display: inline-block
+        margin-right: 15px
+        background: #1599FC
+        border-radius: 50%
+    &_subtitle
+      padding-bottom: 10px
+      color: #13293D
+
+.phone
+  display: flex
+  flex-flow: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  &__item
+    margin: 10px 0
+    color: #13293D
+    font-weight: 500
+    font-size: 18px
+    position: relative
+    margin-left: 20px
+    &-kivstar
+      &::before
+        background-image: url(../img/svg/kivstar.svg)
+    &-lifecell
+      &::before
+        background-image: url(../img/svg/lifecell.svg)
+    &-vodafone
+      &::before
+        background-image: url(../img/svg/vodafone.svg)
+    &::before
+      display: block
+      content: ' '
+      position: absolute
+      height: 18px
+      width: 18px
+      margin-right: 14px
+      background-repeat: no-repeat
+      left: -25px
+      top: 50%
+      transform: translateY(-50%)
+
+.lang-switcher
+  margin: 25px
+  display: flex
+  justify-content: space-evenly
+  &__link
+    color: #707070
+    font-weight: 400
+    font-size: 20px
+    // transition: .1s
+    &:hover
+      color: #1599FC
+      // opacity: .9
+      font-weight: bold
+      // transition: .1s
+    &-active
+      font-weight: bold
+      color: #1599FC
+
+
+@media  (max-width: 1830px)
+  .nav
+    &__menu
+      &_item
+        font-size: 22px
+
+@media  (max-width: 1678px)
+  .fix-box
+    width: 11%
+  .main-menu__sub
+    left: 110%
+    &_item
+      font-size: 18px
+  .nav
+    &__menu
+      &_item
+        font-size: 21px
+        &:hover::after
+          font-size: 30px
+
+@media  (max-width: 1590px)
+  .fix-box
+    &__contact
+      width: 101%
+  .nav
+    &__menu
+      width: 87%
+      margin-left: 13%
+      & li
+        padding: 15px 0
+      &_item
+        font-size: 18px
+        &:hover::after
+          font-size: 29px
+
+  .lang-switcher__link
+    font-size: 18px
+  .phone__item
+    font-size: 16px
+  .main-menu__sub
+    left: 100%
+
+@media  (max-width: 1410px)
+  .fix-box
+    &__contact
+      width: 100.1%
+      padding: 10px 10px
+  .nav__menu
+    & li
+        padding: 10px 0
+    &_item
+      font-size: 14px
+      &:hover::after
+        font-size: 28px
+        position: absolute
+        top: 50%
+        transform: translateY(-65%)
+  .lang-switcher
+    margin: 15px
+    &__link
+      font-size: 14px
+  .phone__item
+    font-size: 12px
+    &::before
+      background-size: contain
+      height: 16px
+      width: 16px
+
+  .main-menu__sub
+    width: 311px
+    &_item
+      font-size: 15px
+    &_subtitle
+      font-size: 14px
+
+@media  (max-width: 1150px)
+  .fix-box__contact
+    padding: 10px 4px
+
+  .phone__item
+    margin-left: 14px
+    &::before
+      left: -20px
+  .nav__menu
+    &_item
+      font-size: 13px
+      &:hover::after
+        font-size: 22px
+        margin-left: 8px
+  .lang-switcher__link
+    font-size: 13px
+
+@media  (max-width: 992px)
+  .fix-box
+    width: 12%
+  .nav__menu_item
+    font-size: 12px
+  .lang-switcher__link
+    font-size: 11px
+  .phone__item
+    font-size: 11px
+@media  (max-width: 840px)
+    .fix-box
+      width: 13%
+
+
+
+
+
+
+@media  (max-width: 780px)
+  .fix-box
+    width: 100%
+    height: unset
+    &__header
+      flex-direction: row
+      height: 70px
+      width: 100%
+      display: flex
+      justify-content: space-between
+      z-index: 100
+      &_logo
+        height: 100%
+      &_buy-btn
+        height: 100%
+        width: 161px
+        background: #1599FC
+        color: #fbfbfb
+        font-size: 16px
+        font-weight: 600
+        display: flex
+        align-items: center
+        justify-content: center
+      &_hamburg-btn
+        display: flex
+        align-items: center
+    &__lang
+      background-color: #13293d
+      width: 110px
+      z-index: 100
+    &__contact
+      z-index: 100
+      background: #fbfbfb
+    &__main
+      position: absolute
+      top: 9000px
+      transition: 1s
+      align-items: center
+      min-height: calc(100vh - 69px)
+      transition: 2s
+      display: flex
+      background-color: #13293d
+      width: 100%
+      &-active
+        top: 69px
+        transition: .3s
+
+  .nav__menu
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    padding: 100% 0
+    &_item
+      font-size: 15px
+  .lang-switcher__link
+    font-size: 15px
+  .phone__item
+    font-size: 15px
+
+
+  .navbar__logo_svg
+    height: 100%
+    padding: 10px 20px
+    width: auto
+    margin: unset
+
+
+
+
+
+//
+
+
+// //   .nav
+// //     &__menu
+// //       &_item
+// //         font-size: 20px
+// //         &:hover
+// //           &::after
+// //             margin-left: 10px
+// //   .lang-switcher
+// //     &__link
+// //       font-size: 18px
+// //
+// // @media  (max-width: 1366px)
+// //   .nav__menu
+// //     width: 90%
+// //     &_item
+// //       font-size: 16px
+// //   .lang-switcher
+// //     &__link
+// //       font-size: 16px
+// //   .phone
+// //     &__item
+// //       font-size: 15px
+// //
+// //   @media  (max-width: 1300px)
+// //     .nav__menu
+// //       width: 100%
+// //     .lang-switcher__link
+// //       margin: 0 7px
+// //   @media  (max-width: 992px)
+// //     .nav__menu
+// //       width: 100%
+// //     .lang-switcher__link
+// //       margin: 0 7px

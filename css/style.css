@@ -1,0 +1,64 @@
+/*
+Error: Inconsistent indentation: 7 spaces were used for indentation, but the rest of the document was indented using 2 spaces.
+        on line 306 of C:/Users/odmin/Desktop/Delfibus/sass/_interface.sass
+        from line 13 of C:\Users\odmin\Desktop\Delfibus\sass\style.sass
+
+301: @media  (max-width: 1366px)
+302:   .container
+303:     &__header
+304:       height: 280px
+305:       &_title
+306:        font-size: 60px
+307:       &_subtitle
+308:        font-size: 18px
+309:        width: 31%
+310: 
+311: 
+
+Backtrace:
+C:/Users/odmin/Desktop/Delfibus/sass/_interface.sass:306
+C:\Users\odmin\Desktop\Delfibus\sass\style.sass:13
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:494:in `block in tabulate'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `each'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `each_with_index'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `tabulate'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/coala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/coala/bin/sass:22:in `load'
+D:/coala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 7 spaces were used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 306 of C:/Users/odmin/Desktop/Delfibus/sass/_interface.sass\A         from line 13 of C:\Users\odmin\Desktop\Delfibus\sass\style.sass\A \A 301: @media  (max-width: 1366px)\A 302:   .container\A 303:     &__header\A 304:       height: 280px\A 305:       &_title\A 306:        font-size: 60px\A 307:       &_subtitle\A 308:        font-size: 18px\A 309:        width: 31%\A 310: \A 311: "; }

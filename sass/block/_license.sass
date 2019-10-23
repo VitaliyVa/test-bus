@@ -1,0 +1,33 @@
+// main: ../style.sass
+
+
+.license
+  &__wrap
+    display: flex
+    margin-top: 100px
+  &__item
+    position: relative
+    margin: 4%
+    &:hover
+      box-shadow: 0px 0px 50px -20px #000
+      & .license__item_block
+        max-height: 650px
+    &_block
+      position: absolute
+      bottom: -40px
+      width: 50%
+      min-height: 300px
+      display: block
+      background: #1599FC
+      border-radius: 5px
+      left: 20%
+      z-index: 1
+      max-height: 400px
+      transition: .5s
+      &-content
+          height: 620px
+    &_img
+      position: relative
+      z-index: 5
+      & img
+        width: 100%

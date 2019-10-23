@@ -1,0 +1,77 @@
+// main: ../style.sass
+
+$main-color: #1599fc;
+$secondary-color: #fff;
+$greyy-color:#757575;
+
+
+.btn{
+  width: 300px;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 18px;
+  display: inline-block;
+  letter-spacing: 0.15em;
+  text-transform: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  &-white{
+    background: $secondary-color;
+    color: $main-color;
+
+  }
+  &-blue{
+    background: $main-color;
+    color: $secondary-color;
+    @include box-shadow( 0px 21px 66px -27px rgba(21,153,252,1));
+    &:hover{
+      transform: scale(0.95);
+    }
+    cursor: pointer;
+  }
+  &-greyy{
+      background: $secondary-color;
+      color: $greyy-color;
+      border: 1px solid $greyy-color;
+  }
+
+
+
+}
+
+@media (max-width: 1450px){
+  .btn{
+    height: 68px;
+    width: 256px;
+
+    font-size: 18px;
+  }
+
+}
+
+
+
+@media  (max-width: 1366px){
+  .btn{
+
+      height: 55px;
+      width: 235px;
+      font-size: 16px;
+  }
+
+}
+
+@media  (max-width: 1200px){
+  .btn {
+
+    height: 50px;
+    width: 175px;
+    font-size: 14px;
+}
+
+}
