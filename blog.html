@@ -16,42 +16,84 @@
     <link rel="stylesheet" href="static/css/slick-theme.css">
     <link rel="stylesheet" href="static/css/style.min.css">
     <link rel="stylesheet" href="static/css/datepicker.min.css">
+  
+  <style>
+      .post_wrap {
+  justify-content: center;
+}
 
+  </style>
 </head>
 
 <body>
     <div class="global-box">
         <div class="fix-box ">
-            <div class="navbar fix-box__navbar">
 
-                <div class=" navbar__logo ">
-                    <a href="#">
-                        <object class="navbar__logo_svg" type="image/svg+xml" data="static/img/logo.svg"></object>
-                    </a>
-                </div>
-                <nav class="nav__menu">
-                  <a class="nav__menu_item" href="index.html">Услуги</a>
-                  <a class="nav__menu_item" href="#">Автопарк</a>
-                  <a class="nav__menu_item" href="about_us.html">О нас</a>
-                  <a class="nav__menu_item" href="blog.html">Контакти</a>
-                  <a class="nav__menu_item" href="#">Блог</a>
-                </nav>
-                <div class="navbar__lang lang-switcher">
-                    <a class="lang-switcher__link lang-switcher__link-active" href="#">Ru</a>
-                    <a class="lang-switcher__link" href="#">Ua</a>
-                </div>
+
+
+        <div class="fix-box__header">
+          <div class="fix-box__header_logo">
+            <a class="header-logo" href="#">
+                <object class="navbar__logo_svg" type="image/svg+xml" data="static/img/logo.svg"></object>
+            </a>
+          </div>
+          <div class="fix-box__header_buy-btn">
+            Купить
+          </div>
+          <div class="fix-box__header_hamburg-btn">
+            <div class="hamburger hamburger--slider js-hamburger  ">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
             </div>
-            <div class="fix-box__contact phone">
-                <a class="phone__item" href="tel:+380097753602">
+          </div>
+        </div>
+        <div class="fix-box__main  ">
+          <div class="fix-box__nav nav__wrap">
+            <!-- <div class="nav__menu"> -->
+              <ul class="nav__menu">
+                <li><a class="nav__menu_item nav__menu_item-drop" href="index.html">Услуги</a>
+                  <ul class="nav__menu_sub main-menu__sub" >
+                    <li>
+                      <div class="main-menu__sub_subtitle">Направления</div>
+                      <a class="main-menu__sub_item" href="">Днепр - Борисполь - Киев</a></li>
+                    <li>
+                      <div class="main-menu__sub_subtitle">Направления</div>
+                      <a class="main-menu__sub_item" href="">Днепр - Киев - Львов</a></li>
+                    <li ><a class="main-menu__sub_item" href="">Поездки в Европу</a></li>
+                    <li ><a class="main-menu__sub_item" href="">Заказ микроавтобуса</a></li>
+
+                  </ul>
+                </li>
+                <li><a class="nav__menu_item" href="#">Автопарк</a></li>
+                <li><a class="nav__menu_item" href="about_us.html">О нас</a></li>
+                <li><a class="nav__menu_item" href="blog.html">Контакти</a></li>
+                <li><a class="nav__menu_item" href="#">Блог</a></li>
+              </ul>
+            <!-- </div> -->
+
+          </div>
+          <div class="fix-box__lang lang-switcher">
+            <a class="lang-switcher__link lang-switcher__link-active" href="#">Ru</a>
+            <a class="lang-switcher__link" href="#">Ua</a>
+          </div>
+          <div class="fix-box__contact">
+            <div class="contact__wrap">
+              <div class="contact__item phone">
+                <a class="phone__item phone__item-kivstar" href="tel:+380097753602">
                     <div>097 734 40 40</div>
                 </a>
-                <a class="phone__item" href="tel:+380097753602">
+                <a class="phone__item phone__item-lifecell" href="tel:+380097753602">
                     <div>063 232 00 70</div>
                 </a>
-                <a class="phone__item" href="tel:+380097753602">
+                <a class="phone__item phone__item-vodafone" href="tel:+380097753602">
                     <div>099 038 05 02</div>
                 </a>
+              </div>
             </div>
+          </div>
+        </div>
+
         </div>
         <div class="all-content">
 
