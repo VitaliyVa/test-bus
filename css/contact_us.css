@@ -2,19 +2,35 @@
 .contact-us-wrap {
   padding-left: 80px;
   display: flex;
-  justify-content: space-between; }
-  .contact-us-wrap ::-webkit-input-placeholder {
-    /* WebKit browsers */
+  justify-content: space-between;
+  font-size: 1.2em; }
+  .contact-us-wrap .input-tickets__main {
+    border-color: black;
     color: black; }
-  .contact-us-wrap :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
+  .contact-us-wrap .select-tickets .select__intup {
+    border-color: black;
     color: black; }
-  .contact-us-wrap ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
+  .contact-us-wrap .input-tickets__grops_title {
     color: black; }
-  .contact-us-wrap :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: black; }
+  .contact-us-wrap .field__icon_wrap {
+    color: black;
+    fill: black; }
+  .contact-us-wrap .field-tickets {
+    display: flex;
+    border: 1px solid #13293D;
+    border-radius: 5px;
+    height: 44px;
+    color: inherit;
+    border-color: inherit;
+    width: 91%;
+    cursor: pointer; }
+  .contact-us-wrap .fix-field {
+    height: 44px; }
+  .contact-us-wrap .field-tickets__icon {
+    width: 50px; }
+  .contact-us-wrap .field .field__icon_click, .contact-us-wrap .field__icon {
+    height: 100%;
+    width: 44px; }
 
 .contact__form {
   width: 80%;
@@ -23,6 +39,9 @@
 .contact__title h1 {
   margin-top: 60px;
   color: #13293D; }
+
+.contact__form .input-tickets__grops_title {
+  font-size: 1.2em; }
 
 .maps-block {
   width: 45%;
@@ -43,7 +62,8 @@
   height: 100px; }
 
 .label {
-  padding: 15px 0; }
+  padding: 15px 0;
+  font-size: 1.2em; }
 
 .contact__textarea {
   width: 100%;
@@ -53,18 +73,25 @@
   border-radius: 5px;
   margin-bottom: 50px;
   resize: none;
-  /* Запрещаем изменять размер */ }
+  /* Запрещаем изменять размер */
+  padding: 20px;
+  font-size: 1.2em; }
+  .contact__textarea:hover {
+    border-color: #1599FC; }
 
 .contact_btn {
   width: 300px;
   font-size: 17px; }
 
+@media (max-width: 1711px) and (min-width: 1103px) {
+  .contact-us-wrap .contact__form .input-tickets__grops_title {
+    width: 400px; } }
 @media (max-width: 1710px) {
   #fix-contact-3 {
     width: 91%; } }
 @media (max-width: 1491px) {
   .contact__form .input-tickets__grops_title {
-    font-size: 0.8em; } }
+    font-size: 1em; } }
 @media (max-width: 1287px) {
   .maps-block {
     width: 45%;
@@ -89,13 +116,14 @@
     margin: 0 auto;
     margin-bottom: 100px; }
   .contact-us-wrap .label {
-    margin-top: 175px; }
+    margin-top: 195px; }
   .contact-us-wrap .contact__form .input-tickets__grops_title {
     padding-top: 10px; }
   .contact-us-wrap #fix-contact-2 {
     padding-top: 0; }
   .contact-us-wrap #fix-contact-4 {
-    padding-top: 25px; } }
+    padding-top: 25px;
+    width: 350px; } }
 @media (max-width: 1065px) {
   .maps-block {
     width: 45%;
@@ -126,9 +154,6 @@
 
   .contact_btn {
     margin: 0 auto;
-    margin-bottom: 50px; }
-
-  #fix-contact-3 {
-    width: 100%; } }
+    margin-bottom: 50px; } }
 
 /*# sourceMappingURL=contact_us.css.map */

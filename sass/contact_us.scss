@@ -3,18 +3,46 @@
 	padding-left: 80px;
 	display: flex;
 	justify-content: space-between;
+	font-size: 1.2em;
+	
 
-	::-webkit-input-placeholder { /* WebKit browsers */
-    color:    black;
+	.input-tickets__main {
+		border-color: black;
+		color: black;
 	}
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	    color:    black;
+	.select-tickets .select__intup {
+		border-color: black;
+		color: black;
 	}
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-	    color:    black;
+	.input-tickets__grops_title {
+		color: black;
 	}
-	:-ms-input-placeholder { /* Internet Explorer 10+ */
-	    color:    black;
+	#fix-contact-4 {
+
+	}
+	.field__icon_wrap {
+		color: black;
+		fill: black;
+	}
+	.field-tickets {
+    display: flex;
+    border: 1px solid #13293D;
+    border-radius: 5px;
+    height: 44px;
+    color: inherit;
+    border-color: inherit;
+    width: 91%;
+    cursor: pointer;
+	}
+	.fix-field {
+		height: 44px;
+	}
+	.field-tickets__icon {
+		width: 50px;
+	}
+	.field .field__icon_click, .field__icon {
+		height: 100%;
+		width: 44px;
 	}
 }
 .contact {
@@ -32,6 +60,12 @@
 		}
 	}
 }
+.contact__form {
+		.input-tickets__grops_title {
+			font-size: 1.2em;
+
+		}
+	}
 .maps-block {
 	width: 45%;
 	height: 1150px;
@@ -54,6 +88,7 @@
 }
 .label {
 	padding: 15px 0;
+	font-size: 1.2em;
 }
 .contact__textarea {
 	width: 100%; /* Ширина поля в процентах */
@@ -62,11 +97,25 @@
 	border-radius: 5px;
 	margin-bottom: 50px;
     resize: none; /* Запрещаем изменять размер */
+    padding: 20px;
+    font-size: 1.2em;
+
+    &:hover {
+    	border-color: #1599FC;
+    }
 }
 .contact_btn {
 	
 	width: 300px;
 	font-size: 17px;
+}
+
+@media (max-width: 1711px) and (min-width: 1103px){
+	.contact-us-wrap {
+		.contact__form .input-tickets__grops_title {
+			width: 400px;
+		}
+	}
 }
 
 @media (max-width: 1710px) {
@@ -77,7 +126,7 @@
 @media (max-width: 1491px) {
 	.contact__form {
 		.input-tickets__grops_title {
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 	}
 }
@@ -119,7 +168,7 @@
 
 		}
 		.label {
-			margin-top: 175px;
+			margin-top: 195px;
 		}
 		.contact__form .input-tickets__grops_title {
 			padding-top: 10px;
@@ -129,7 +178,9 @@
 		}
 		#fix-contact-4 {
 			padding-top: 25px;
+			width: 350px;
 		}
+
 	}
 }
 @media (max-width: 1065px) {
@@ -188,7 +239,5 @@
 		margin: 0 auto;
 		margin-bottom: 50px;
 	}
-	#fix-contact-3 {
-	width: 100%;
-	}
+	
 }
